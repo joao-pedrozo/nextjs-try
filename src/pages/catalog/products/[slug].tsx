@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
 const AddToCartModal = dynamic(
-    () => import('../../../components/AddToCartModal'), // Primeiro parâmetro é o componente que vamos importar (lazy load)
+    () => import('@/components/AddToCartModal'), // Primeiro parâmetro é o componente que vamos importar (lazy load)
     { loading: () => <p> Loading... </p> } // options
 );
 
